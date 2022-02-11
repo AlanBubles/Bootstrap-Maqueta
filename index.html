@@ -6,29 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--LINK PARA BOOTSTRAP-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <!--MI LINK PARA CSS-->
-    <link rel="stylesheet" href="style.css">
-    <!--LINK PARA ICONOS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    rel="stylesheet">
-   
-    
-   
-    
+    <!--LINK PARA ICONOS/FUNETES DE GOOGLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <!--MI LINK PARA CSS-->
+       <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body >
+    <!--======================================================================-->
+    <!--AQUI INICIO LA BARRA DE NAVEGACION-->
+    <!--------------------------------------------------------------------------->
+    <!--/UTILIZO LA CLASE BI PARA REFERIRME A LOS ICONOS/USO LA CLASE BG-DARK TANTO EN EL HEADER COMO EL  NAV YA QUE UTILIZO UN CONTENEDOR FLUID EN EL HEADER-->
+    <!--=======================================================================-->
   <header class="container-fluid bg-black p-2">
     
-      <nav class="navbar  navbar-text navbar-dark bg-black">
+      <nav class="navbar  navbar-text navbar-dark bg-black ">
           <a   href="" class="navbar-brand text-light">MyPortafolio</a>
-          <li><a href="index.html" class="material-icons-outlined">home</li>
-          <li><a href="index.html" class="material-icons-outlined">works</li>
-          <li><a href="index.html" class="material-icons-outlined">face</li>    
-
+          <li><a href="" class="bi bi-briefcase"></a></li>
+          <li><a href="" class="bi bi-file-person-fill"></a></li>
+          <li><a href="" class="bi bi-headset"></a></li>
       </nav>
 
   </header>
+
+   <!--======================================================================-->
+    <!--AQUI INICIA EL CONTENIDO PRINCIPAL-->
+    <!--------------------------------------------------------------------------->
+    <!-- CREO UNA FILA/DESPUES CREO UNA COLUMNA QUE SERA LA IMAGEN /COMO EL CONTENIDO PARA TELEFONO ES 100% Y PARA PANTALLAS MAS GRANDES 50% DECLARO LA PROPIEDAD SM-12 PARA DECIRLE QUE CUANDO SE PEQUEÑA OCUPE EL 100%/TAMBIEN DEJO COMO DEFECTO QUE LAS COLUMNAS OCUPEN EL 12 ASI SI LLEGA A UNA RESOLUCION MAS PEQUEÑA QUE LA DE BOOTSTRAP SE AJUSTE ALA QUE HE DEFINIDO COMO DEFECTO/NO AJUSTO LA FONT-SIZE/NI EL TAMAÑO DE LOS CONTENEDORES YA QUE LO HARE EN LOS @MEDIAS-->
+    <!--=======================================================================--> 
+  <main > 
+
+      <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+              <img class="img-fluid" src="img/yo.jpg" alt="">
+
+              
+          </div>
+          
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 bg-black">
+              <h2 class="text-light m-4 ">Hola me llamo Alan Vergara</h2>
+              <h1 class="text-center text-dark" id="h1_main">Y SOY UN DESAROLLADOR WEB </h1>
+              
+          </div>
+
+      </div>
+  </main>
+   <!---===================================================================================-->
+   <!------------AQUI INICIA LA SECCION DE LAS TARJETAS-->
+   <!-------------------------------------------------------------------->
+   <!---CREO LA SECCION LA CUAL TIENE UNA SOLA FILA Y 3 COLUMNAS/ESTAS COLUMNAS SON LAS CARDS/LES DEFINO EL ICONO QUE USARAN / TITULO Y EL PARRAFO /EN LOS STYLE LE DOY UN MEJOR ESTILO YA QUE BOOTSTRAP ME LIMITABA MUCHO /ADEMAS LES AGREGO EL EFECTO HOVER / EN LA VERSION DE TELEFONOS PIENSO DARLES UN MEJOR ESTILOS CON @MEDIAS-->
+   <!--=====================================================================================-->
+
+  <section>
+
+      <div class="row">
+  <!------------------------------------------------------------------INICIO-->
+      <div class="card col-4 m-3 " style="width: 18rem;height: 9rem;">
+        <h2 class="title">Programacion</h2>
+        <i class="bi bi-code-square"></i>
+        <p class="title_p">ESPECIALISTA EN FRONTEND Y JAVASCRIPT</p>
+
+
+
+      </div>
+      <!------------------------------------------------>
+      <div class="card col-4 m-3 " style="width: 18rem;height: 9rem;">
+        <h2 class="title">Fotografia</h2>
+        <i class="bi bi-camera"></i>
+        <p class="title_p">UNO DE MIS HOBBIES LA FOTOGRAFIA PROFESIONAL</p>
+
+
+
+      </div>
+      <!---------------------------------------------------------->
+      <div class="card col-4 m-3" style="width: 18rem;height: 9rem;">
+        <h2 class="title">Diseño UX/UI</h2>
+        <i class="bi bi-window-split"></i>
+        <p class="title_p">ALTO CONOCIMIENTO EN INTERFACES DE USUARIO</p>
+      </div>
+<!-----------------------------------------------------------------------FINAL/DIV ROW-->
+      </div>
+
+
+
+  </section>
+
+  
+
 
 
 

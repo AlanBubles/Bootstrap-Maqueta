@@ -2,14 +2,70 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: yellow;
+    font-family: 'Rowdies', cursive;
+    background-color: black;
+    
 }
-.material-icons-outlined{
-    text-decoration: none;
+html{
+    width: 100%;
+}
+.bi{
     color: aqua;
+    margin-right: 5px;
+    font-size: 30px;
 }
-.material-icons-outlined:hover{
-    text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+.row{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+col{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.bg-primary{
+ background-color: aqua;
+}
+#h1_main{
+    background-color: aqua;
+}
+.card{
+    border-radius: 20%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border: 5px solid aqua;
+    margin-top: 5px;
+    
+
+    
+}
+.card:hover{
+    background-color: white;
+    transition: 1s;
+    box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
     transition: 0,5s;
     color: aquamarine;
+    border-style:dotted;
+}
+.title{
+    color: white;
+    font-size: medium;
+    position: absolute;
+    top: 0;
+    margin-top:5px ;
+    margin-left: 30%;
+}
+.title_p{
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+    color: black;
+    margin-top: 5px;
+}
+.card i{
+  margin-left: 40%;
+  top:20%;
+  position: absolute;
 }
