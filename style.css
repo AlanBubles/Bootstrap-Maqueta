@@ -91,6 +91,9 @@ col{
 footer{
     margin-top: 100%;
 }
+.img-works{
+    margin-top: 10px;
+}
 
 /*AQUI INICIA LOS  ESTILOS A ARREGLAR CON @MEDIAS*/
 @media only screen and (min-width: 200px) and (max-width: 575px){
