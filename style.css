@@ -94,6 +94,17 @@ footer{
 .img-works{
     margin-top: 10px;
 }
+.img-about{
+    filter: grayscale(10);
+}
+.about{
+    border-bottom:5px solid #00ffff;
+        
+}
+header{
+    border-bottom:5px solid aqua ;
+}
+
 
 /*AQUI INICIA LOS  ESTILOS A ARREGLAR CON @MEDIAS*/
 @media only screen and (min-width: 200px) and (max-width: 575px){
@@ -124,6 +135,16 @@ footer{
     .link{
         font-size: x-small;
     }
+    .text-about{
+        font-size: small;
+    }
+    .texto-about{
+        font-size: x-small;
+    }
+    .img-about{
+        margin-top: 30px;
+    }
+
 
 }
 
@@ -197,6 +218,9 @@ footer{
         margin-left: 10%;
         color: black;
         margin-top: 5px;
+    }
+    .img-about{
+        width: 50%;
     }
     
 }
