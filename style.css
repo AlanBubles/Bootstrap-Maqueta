@@ -11,6 +11,9 @@ html{
     width: 100%;
     height: 100%;
 }
+/*===========================================================================================*/
+/*-------ESTOS ESTILOS SIRVEN PARA QUITAR EL ESTILO DE LINEA Y ESTILOS DE ENLACES------------*/
+/*===========================================================================================*/
 a{
     text-decoration: none;
 }
@@ -18,7 +21,9 @@ li{
     list-style: none;
 }
 
-
+/*===========================================================================================*/
+/*=---------ESTOS ESTILOS SON PARA LOS ICONOS LE DOY EL COLOR Y EL EFECTO HOVER-------------=*/
+/*===========================================================================================*/
 .bi{
     color: aqua;
     margin-right: 5px;
@@ -30,6 +35,9 @@ li{
     color:white;
 
 }
+/*===========================================================================================*/
+/*--ESTOS ESTILOS SON PARA ARREGLAR LOS SCROLL QUE SE GENERABA TANTO HORIZONTAL COMO VERTICALMENTE--------------------------------------------------------------------------------*/
+/*===========================================================================================*/
 .row{
     max-width: 100%;
     padding: 0;
@@ -40,12 +48,18 @@ col{
     padding: 0;
     margin: 0;
 }
+/*===========================================================================================*/
+/*===----ESTOS ESTILOS SON PARA DARLE COLOR A ALGUNOS CONTENEDORES A LOS CUALES NO QUERIA HACERLE MAS GRANDE LAS CLASES O DARLE STYLE ALLI MISMO----===*/
+/*===========================================================================================*/
 .bg-primary{
  background-color: aqua;
 }
 #h1_main{
     background-color: aqua;
 }
+/*===========================================================================================*/
+/*ESTOS ESTILOS SON PARA LAS TARJETAS DE LA PAGINA DE INICIO / TANTO COLOR COMO ANIMACIONES*/
+/*===========================================================================================*/
 .card{
     border-radius: 20%;
     display: flex;
@@ -64,6 +78,9 @@ col{
     transition: 0,5s;
     color: aquamarine;
     border-style:dotted;
+/*===========================================================================================*/
+/*--ESTOS ESTILOS SON PARA DARLE COLOR , POSICIONES Y A LOS TITULOS Y PARRAFOS DE LAS TARJETAS INDEX-------------------------------------------------------------------------------------- -*/
+/*===========================================================================================*/
 }
 .title{
     color: white;
@@ -85,6 +102,9 @@ col{
   top:20%;
   position: absolute;
 }
+/*===========================================================================================*/
+/*===ESTOS ESTILOS SON PARA TERMINAR DE ARREGLAR ALGUNAS COSITAS O DAR ESTILOS SIMPLE===*/
+/*===========================================================================================*/
 .text-center{
     margin: 5px;
 }
