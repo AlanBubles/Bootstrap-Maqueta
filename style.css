@@ -11,6 +11,9 @@ html{
     width: 100%;
     height: 100%;
 }
+.xd{
+    background-image: url(img/low-poly-grid-haikei.svg);
+}
 /*===========================================================================================*/
 /*-------ESTOS ESTILOS SIRVEN PARA QUITAR EL ESTILO DE LINEA Y ESTILOS DE ENLACES------------*/
 /*===========================================================================================*/
@@ -25,7 +28,7 @@ li{
 /*=---------ESTOS ESTILOS SON PARA LOS ICONOS LE DOY EL COLOR Y EL EFECTO HOVER-------------=*/
 /*===========================================================================================*/
 .bi{
-    color: aqua;
+    color: #00ffff;
     margin-right: 5px;
     font-size: 30px;
 }
@@ -204,6 +207,7 @@ header{
         position: absolute;
         top: 0;
     }
+    
  }
 
 
