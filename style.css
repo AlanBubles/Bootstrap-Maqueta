@@ -1,250 +1,268 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rowdies', cursive;
-    background-color: black;
-    min-height: 100%;
-    
+html {
+  width: 100%;
+  height: 100%;
 }
-html{
-    width: 100%;
-    height: 100%;
+
+html body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rowdies', cursive;
+  background-color: black;
+  min-height: 100%;
 }
-.xd{
-    background-image: url(img/low-poly-grid-haikei.svg);
+
+.xd {
+  background-image: url(img/low-poly-grid-haikei.svg);
 }
+
 /*===========================================================================================*/
 /*-------ESTOS ESTILOS SIRVEN PARA QUITAR EL ESTILO DE LINEA Y ESTILOS DE ENLACES------------*/
 /*===========================================================================================*/
-a{
-    text-decoration: none;
+li {
+  list-style: none;
 }
-li{
-    list-style: none;
+
+li a {
+  text-decoration: none;
 }
 
 /*===========================================================================================*/
 /*=---------ESTOS ESTILOS SON PARA LOS ICONOS LE DOY EL COLOR Y EL EFECTO HOVER-------------=*/
 /*===========================================================================================*/
-.bi{
-    color: #00ffff;
-    margin-right: 5px;
-    font-size: 30px;
+.bi {
+  color: aqua;
+  margin-right: 5px;
+  font-size: 30px;
 }
-.link:hover{
-    text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
-    transition: 0,5s;
-    color:white;
 
+.link:hover {
+  text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+  -webkit-transition: 0,5s;
+  transition: 0,5s;
+  color: white;
 }
+
 /*===========================================================================================*/
 /*--ESTOS ESTILOS SON PARA ARREGLAR LOS SCROLL QUE SE GENERABA TANTO HORIZONTAL COMO VERTICALMENTE--------------------------------------------------------------------------------*/
 /*===========================================================================================*/
-.row{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+.row {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
-col{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+
+col {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
+
 /*===========================================================================================*/
 /*===----ESTOS ESTILOS SON PARA DARLE COLOR A ALGUNOS CONTENEDORES A LOS CUALES NO QUERIA HACERLE MAS GRANDE LAS CLASES O DARLE STYLE ALLI MISMO----===*/
 /*===========================================================================================*/
-.bg-primary{
- background-color: aqua;
+.bg-primary {
+  background-color: aqua;
 }
-#h1_main{
-    background-color: aqua;
+
+#h1_main {
+  background-color: aqua;
 }
+
 /*===========================================================================================*/
 /*ESTOS ESTILOS SON PARA LAS TARJETAS DE LA PAGINA DE INICIO / TANTO COLOR COMO ANIMACIONES*/
 /*===========================================================================================*/
-.card{
+.card {
+  border-radius: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
+  border: 5px solid aqua;
+  margin-top: 5px;
+}
+
+.card:hover {
+  background-color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+          box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+  -webkit-transition: 0,5s;
+  transition: 0,5s;
+  color: aquamarine;
+  border-style: dotted;
+  /*===========================================================================================*/
+  /*--ESTOS ESTILOS SON PARA DARLE COLOR , POSICIONES Y A LOS TITULOS Y PARRAFOS DE LAS TARJETAS INDEX-------------------------------------------------------------------------------------- -*/
+  /*===========================================================================================*/
+}
+
+.title {
+  color: white;
+  font-size: medium;
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 30%;
+}
+
+.title_p {
+  position: absolute;
+  top: 40%;
+  margin-left: 10%;
+  color: black;
+  margin-top: 5px;
+}
+
+.card i {
+  margin-left: 40%;
+  top: 20%;
+  position: absolute;
+}
+
+/*===========================================================================================*/
+/*===ESTOS ESTILOS SON PARA TERMINAR DE ARREGLAR ALGUNAS COSITAS O DAR ESTILOS SIMPLE===*/
+/*===========================================================================================*/
+.text-center {
+  margin: 5px;
+}
+
+footer {
+  margin-top: 100%;
+}
+
+.img-works {
+  margin-top: 10px;
+}
+
+.img-about {
+  -webkit-filter: grayscale(10);
+          filter: grayscale(10);
+}
+
+.about {
+  border-bottom: 5px solid aqua;
+}
+
+header {
+  border-bottom: 5px solid aqua;
+}
+
+/*AQUI INICIA LOS  ESTILOS A ARREGLAR CON @MEDIAS*/
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  .card {
+    height: 8rem;
+    width: 5rem;
+    margin-left: 5px;
+    border-radius: 0;
+  }
+  .card .title {
+    font-size: x-small;
+    position: absolute;
+    left: 0;
+    margin: 0;
+  }
+  .card .title_p {
+    font-size: 8px;
+    margin: 0%;
+  }
+  .bi-c {
+    font-size: x-small;
+    position: absolute;
+    left: 0;
+    margin-left: 40%;
+  }
+  .link {
+    font-size: x-small;
+  }
+  .text-about {
+    font-size: small;
+  }
+  .texto-about {
+    font-size: x-small;
+  }
+  .img-about {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .card {
     border-radius: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: black;
     border: 5px solid aqua;
+    margin-top: 10px;
+    height: 9rem;
+    width: 9rem;
+  }
+  .title {
+    color: white;
+    font-size: small;
+    position: absolute;
+    top: 0;
+    left: 0;
     margin-top: 5px;
-    
+    margin-left: 30%;
+  }
+  .title_p {
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+    color: black;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .bi-c {
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+  }
+}
 
-    
-}
-.card:hover{
-    background-color: white;
-    transition: 1s;
-    box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
-    transition: 0,5s;
-    color: aquamarine;
-    border-style:dotted;
-/*===========================================================================================*/
-/*--ESTOS ESTILOS SON PARA DARLE COLOR , POSICIONES Y A LOS TITULOS Y PARRAFOS DE LAS TARJETAS INDEX-------------------------------------------------------------------------------------- -*/
-/*===========================================================================================*/
-}
-.title{
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1999px) {
+  .card {
+    border-radius: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: black;
+    border: 5px solid aqua;
+    margin-top: 10px;
+    height: 9rem;
+    width: 18rem;
+  }
+  .title {
     color: white;
     font-size: medium;
     position: absolute;
     top: 0;
-    margin-top:5px ;
+    margin-top: 5px;
     margin-left: 30%;
-}
-.title_p{
+  }
+  .title_p {
     position: absolute;
     top: 40%;
     margin-left: 10%;
     color: black;
     margin-top: 5px;
+  }
+  .img-about {
+    width: 50%;
+  }
 }
-.card i{
+
+.d-block {
   margin-left: 40%;
-  top:20%;
-  position: absolute;
 }
-/*===========================================================================================*/
-/*===ESTOS ESTILOS SON PARA TERMINAR DE ARREGLAR ALGUNAS COSITAS O DAR ESTILOS SIMPLE===*/
-/*===========================================================================================*/
-.text-center{
-    margin: 5px;
-}
-footer{
-    margin-top: 100%;
-}
-.img-works{
-    margin-top: 10px;
-}
-.img-about{
-    filter: grayscale(10);
-}
-.about{
-    border-bottom:5px solid #00ffff;
-        
-}
-header{
-    border-bottom:5px solid aqua ;
-}
-
-
-/*AQUI INICIA LOS  ESTILOS A ARREGLAR CON @MEDIAS*/
-@media only screen and (min-width: 200px) and (max-width: 575px){
-    .card{
-        height: 8rem ;
-        width: 5rem;
-        margin-left:5px;
-        border-radius: 0;
-    }
-    .card .title{
-        font-size: x-small;
-        position: absolute;
-        left: 0;
-        margin: 0;
-
-
-    }
-    .card .title_p{
-        font-size: 8px;
-        margin: 0%;
-    }
-    .bi-c{
-        font-size: x-small;
-        position: absolute;
-        left: 0;
-        margin-left: 40%; ;
-    }
-    .link{
-        font-size: x-small;
-    }
-    .text-about{
-        font-size: small;
-    }
-    .texto-about{
-        font-size: x-small;
-    }
-    .img-about{
-        margin-top: 30px;
-    }
-
-
-}
-
-@media only screen and (min-width: 576px) and (max-width:991px) {
-    .card{
-        border-radius: 20%;
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-        border: 5px solid aqua;
-        margin-top: 10px;
-        height: 9rem;
-        width: 9rem;
-        
-    
-        
-    }
-    .title{
-        color: white;
-        font-size: small;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top:5px ;
-        margin-left: 30%;
-    }
-    .title_p{
-        position: absolute;
-        top: 40%;
-        margin-left: 10%;
-        color: black;
-        margin-top: 10px;
-        font-size:10px
-    }
-    .bi-c{
-        margin-top: 2px;
-        position: absolute;
-        top: 0;
-    }
-    
- }
-
-
-
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width:1999px) {
-    .card{
-        border-radius: 20%;
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-        border: 5px solid aqua;
-        margin-top: 10px;
-        height: 9rem;
-        width: 18rem;
-        
-    
-        
-    }
-    .title{
-        color: white;
-        font-size: medium;
-        position: absolute;
-        top: 0;
-        margin-top:5px ;
-        margin-left: 30%;
-    }
-    .title_p{
-        position: absolute;
-        top: 40%;
-        margin-left: 10%;
-        color: black;
-        margin-top: 5px;
-    }
-    .img-about{
-        width: 50%;
-    }
-    
-}
+/*# sourceMappingURL=style.css.map */
