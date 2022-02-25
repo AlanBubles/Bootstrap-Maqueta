@@ -47,13 +47,7 @@ li a {
 /*===========================================================================================*/
 /*--ESTOS ESTILOS SON PARA ARREGLAR LOS SCROLL QUE SE GENERABA TANTO HORIZONTAL COMO VERTICALMENTE--------------------------------------------------------------------------------*/
 /*===========================================================================================*/
-.row {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-col {
+.row, col {
   max-width: 100%;
   padding: 0;
   margin: 0;
@@ -134,7 +128,15 @@ footer {
   margin-top: 100%;
 }
 
-.img-works {
+.img-works-1 {
+  margin-top: 10px;
+}
+
+.img-works-2 {
+  margin-top: 10px;
+}
+
+.img-works-3 {
   margin-top: 10px;
 }
 
@@ -178,6 +180,9 @@ header {
   .link {
     font-size: x-small;
   }
+  .link-footer {
+    font-size: x-small;
+  }
   .text-about {
     font-size: small;
   }
@@ -186,6 +191,9 @@ header {
   }
   .img-about {
     margin-top: 30px;
+  }
+  .d-block-about {
+    margin-left: 25%;
   }
 }
 
@@ -225,6 +233,9 @@ header {
     position: absolute;
     top: 0;
   }
+  .d-block-about {
+    margin-left: 35%;
+  }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -260,9 +271,8 @@ header {
   .img-about {
     width: 50%;
   }
-}
-
-.d-block-about {
-  margin-left: 40%;
+  .d-block-about {
+    margin-left: 45%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

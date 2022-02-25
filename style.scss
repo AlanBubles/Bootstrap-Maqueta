@@ -1,5 +1,8 @@
 $colormain:aqua;
 $colorsecundary:aquamarine;
+@mixin img-about ($margin){
+    margin-top: $margin;
+}
 
 
 html{
@@ -52,9 +55,7 @@ li{
     margin: 0;
 }
 col{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+  @extend .row;
 }
 /*===========================================================================================*/
 /*===----ESTOS ESTILOS SON PARA DARLE COLOR A ALGUNOS CONTENEDORES A LOS CUALES NO QUERIA HACERLE MAS GRANDE LAS CLASES O DARLE STYLE ALLI MISMO----===*/
@@ -119,8 +120,14 @@ col{
 footer{
     margin-top: 100%;
 }
-.img-works{
-    margin-top: 10px;
+.img-works-1{
+    @include img-about(10px);
+}
+.img-works-2{
+    @include img-about(10px);
+}
+.img-works-3{
+    @include img-about(10px);
 }
 .img-about{
     filter: grayscale(10);
@@ -163,6 +170,9 @@ header{
     .link{
         font-size: x-small;
     }
+    .link-footer{
+        font-size: x-small;
+    }
     .text-about{
         font-size: small;
     }
@@ -171,6 +181,9 @@ header{
     }
     .img-about{
         margin-top: 30px;
+    }
+    .d-block-about{
+        margin-left: 25%;
     }
 
 
@@ -212,6 +225,9 @@ header{
         position: absolute;
         top: 0;
     }
+    .d-block-about{
+        margin-left: 35%;
+    }
     
  }
 
@@ -251,8 +267,8 @@ header{
     .img-about{
         width: 50%;
     }
+    .d-block-about{
+        margin-left: 45%;
+    }
     
-}
-.d-block-about{
-    margin-left: 40%;
 }

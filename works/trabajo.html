@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--LINK PARA BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--LINK PARA ICONOS/FUNETES DE GOOGLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <!--MI LINK PARA CSS-->
+       <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+
+<body >
+    <!--======================================================================-->
+    <!--AQUI INICIO LA BARRA DE NAVEGACION-->
+    <!--------------------------------------------------------------------------->
+    <!--/UTILIZO LA CLASE BI PARA REFERIRME A LOS ICONOS/USO LA CLASE BG-DARK TANTO EN EL HEADER COMO EL  NAV YA QUE UTILIZO UN CONTENEDOR FLUID EN EL HEADER-->
+    <!--=======================================================================-->
+  <header class="container-fluid bg-black p-2">
+    
+    <nav class="navbar  navbar-text navbar-dark bg-black ">
+      <a   href="../index.html" class="navbar-brand text-light link-footer">MyPortafolio</a>
+      <li><a href="../works/trabajo.html" class="bi link bi-briefcase">Trabajos</a></li>
+      <li><a href="../about/sobre.html" class="bi link bi-file-person-fill">Sobre mi</a></li>
+      <li><a href="../contact/contacto.html" class="bi link bi-headset">Contacto</a></li>
+    </nav>
+
+  </header>
+  <!--======================================================================================-->
+  <!-----AQUI INCIA EL CONTENIDO PRINCIPAL DE TRABAJOS-->
+  <!--INICIO PONIENDO ALGUNAS HILIRAS A LAS CUALES LES DOY LA PROPIEDAD DE DISPLAY FLEX /ESTO ME PERMITIE PODER ALINIAR LOS H2 QUE HE PUSTO AGREGO TRES DE ESTOS 3 BLOQUES/MIS TRABAJOS/UN PARRAFO Y TRABAJOS DESTACADOS / DEPUES CREO OTRA HILERA DONDE CREO UNA COLUMNA LA CUAL SERA OCUPADA POR EL CARRUSEL-->
+  <!--======================================================================================-->
+  <main>
+  <!------------------------------------------------------------------------------INICIO-->
+     <div class="row">
+      <div class="col">
+        <a href="../" class="bi link bi-arrow-left-circle-fill">Volver</a>
+      </div>
+
+     </div>
+<!----------------------------------------------------------------------------------->
+      <div class="row d-flex justify-content-center">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">MIS TRABAJOS</h1>
+          </div>
+      </div>
+<!------------------------------------------------------------------------------------>
+   <div class="row">
+       <div class="col d-flex justify-content-center m-4">
+        <p class="text-light">En esta seccion encontraras todos mis proyectos hasta la fecha </p>
+       </div>
+   </div>
+  <!----------------------------------------------------------------------------------->
+   <div class="row">
+       <div class="col d-flex justify-content-center">
+           <h2 class="text-light">Trabajos destacados</h2>
+       </div>
+<!----------------------------------------------------------------------------------FIN/MAIN-->
+
+
+
+       <!--=================================================================================-->
+       <!--AQUI INICIA EL CARRUSEL-->
+       <!--INICIO CREANDO UNA NUEVA LINEA Y COLUMNA PARA QUE EL CONTENIDO DEL CARUSEL SIEMPRE SEA EL 100% / LO HAGO MAS PEQUEÑO HAGO EL ROW FLEX Y LO JSUTIFYCONTEN EN EL CENTER Y HAGO QUE EL CARRUSEL ESTE CENTRADO--->
+       <!--=================================================================================-->
+   </div>
+   <div class="row">
+  <!---------------------------------------------------------------------------------INICIO-->
+    <div class="col d-flex justify-content-center">
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/WORKS.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/SEE ALL JOBS.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </div>
+  </div>
+</main>
+ <!--=======================================================================================-->
+ <!--AQUI INICI LA SECCION PARA LOS TRABAJOS -->
+ <!------------------------------------------------------------------------------------------>
+ <!--ESTA SECCION PERMITE VER TODOS MIS TRABAJO PLANEO AGREGAR UN BOTON PARA QUE DIVIDA EL TRABAJO DE FOTOGRAFIA DESAROLLO WEB Y UX/UI-->
+ <!--=======================================================================================-->
+ <section class="row d-flex justify-content-around">
+   <h2 class="text-light text-center">TODOS LOS TRABAJOS</h2>
+  <!------------------------------------------------------------------------------INICIO-->
+   <div class="col">
+    <img src="../img/WORKS.png" alt="" class="img-fluid img-works-1">
+
+   </div>
+<!----------------------------------------------------------------------------->
+   <div class="col">
+    <img src="../img/SEE ALL JOBS.png" alt="" class="img-fluid img-works-2">
+
+   </div>
+<!------------------------------------------------------------------------------>
+   <div class="col">
+    <img src="../img/HOME.png" alt="" class="img-fluid img-works-3">
+
+   </div>
+<!---------------------------------------------------------------------------------FIN/WORKS-->
+  
+   
+   
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--======================================================================================-->
+  <!----AQUI INICI EL CONTENIDO DEL  FOOTER-->
+  <!------------------------------------------------------------------------------------------>
+  <!--INICIO CRENADO EL FOOTER COMO UN FLEXBOX/ALINIO LOS ITEMS AGREGO UNOS ICONOS Y ENLACES-->
+  <!--======================================================================================-->
+
+  <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+    <a href="../index.html" class="navbar-brand text-light">MyPortafolio</a>
+    <a href="../copyright/copyright.html" class="text-center text-muted link-footer">&copy; 2021 Company, Inc</a>
+    <a href="https://www.linkedin.com/in/alan-vergara-3884a0229/" class="bi link bi-linkedin"></a>
+    <a href="https://www.instagram.com/alan.vergaracolores/" class="bi link bi-instagram"></a>
+
+
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
