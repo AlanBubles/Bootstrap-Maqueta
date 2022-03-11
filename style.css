@@ -17,6 +17,10 @@ html body {
   background-image: url(img/low-poly-grid-haikei.svg);
 }
 
+.iconos {
+  margin-top: 30px;
+}
+
 /*===========================================================================================*/
 /*-------ESTOS ESTILOS SIRVEN PARA QUITAR EL ESTILO DE LINEA Y ESTILOS DE ENLACES------------*/
 /*===========================================================================================*/
@@ -32,13 +36,13 @@ li a {
 /*=---------ESTOS ESTILOS SON PARA LOS ICONOS LE DOY EL COLOR Y EL EFECTO HOVER-------------=*/
 /*===========================================================================================*/
 .bi {
-  color: aqua;
+  color: #00ffff;
   margin-right: 5px;
   font-size: 30px;
 }
 
 .link:hover {
-  text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 55px #00ffff, 0 0 75px #00ffff;
   -webkit-transition: 0,5s;
   transition: 0,5s;
   color: white;
@@ -57,11 +61,11 @@ li a {
 /*===----ESTOS ESTILOS SON PARA DARLE COLOR A ALGUNOS CONTENEDORES A LOS CUALES NO QUERIA HACERLE MAS GRANDE LAS CLASES O DARLE STYLE ALLI MISMO----===*/
 /*===========================================================================================*/
 .bg-primary {
-  background-color: aqua;
+  background-color: #00ffff;
 }
 
 #h1_main {
-  background-color: aqua;
+  background-color: #00ffff;
 }
 
 /*===========================================================================================*/
@@ -75,7 +79,7 @@ li a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: black;
-  border: 5px solid aqua;
+  border: 5px solid #00ffff;
   margin-top: 5px;
 }
 
@@ -83,8 +87,8 @@ li a {
   background-color: white;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
-          box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 55px aqua, 0 0 75px aqua;
+  -webkit-box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 55px #00ffff, 0 0 75px #00ffff;
+          box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 55px #00ffff, 0 0 75px #00ffff;
   -webkit-transition: 0,5s;
   transition: 0,5s;
   color: aquamarine;
@@ -145,11 +149,11 @@ footer {
 }
 
 .about {
-  border-bottom: 5px solid aqua;
+  border-bottom: 5px solid #00ffff;
 }
 
 header {
-  border-bottom: 5px solid aqua;
+  border-bottom: 5px solid #00ffff;
 }
 
 /*AQUI INICIA LOS  ESTILOS A ARREGLAR CON @MEDIAS*/
@@ -194,6 +198,10 @@ header {
   .d-block-about {
     margin-left: 25%;
   }
+  .more-h3 {
+    font-size: medium;
+    border-bottom: #00ffff 5px solid;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
@@ -205,7 +213,7 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: black;
-    border: 5px solid aqua;
+    border: 5px solid #00ffff;
     margin-top: 10px;
     height: 9rem;
     width: 9rem;
@@ -247,7 +255,7 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: black;
-    border: 5px solid aqua;
+    border: 5px solid #00ffff;
     margin-top: 10px;
     height: 9rem;
     width: 18rem;
@@ -272,6 +280,9 @@ header {
   }
   .d-block-about {
     margin-left: 45%;
+  }
+  .more-p {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

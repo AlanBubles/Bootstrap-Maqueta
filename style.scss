@@ -1,4 +1,4 @@
-$colormain:aqua;
+$colormain:#00ffff;
 $colorsecundary:aquamarine;
 @mixin img-about ($margin){
     margin-top: $margin;
@@ -20,6 +20,9 @@ html{
 }
 .xd{
     background-image: url(img/low-poly-grid-haikei.svg);
+}
+.iconos{
+    margin-top: 30px;
 }
 /*===========================================================================================*/
 /*-------ESTOS ESTILOS SIRVEN PARA QUITAR EL ESTILO DE LINEA Y ESTILOS DE ENLACES------------*/
@@ -185,6 +188,11 @@ header{
     .d-block-about{
         margin-left: 25%;
     }
+    .more-h3{
+        font-size: medium;
+        border-bottom: #00ffff 5px solid;
+    }
+    
 
 
 }
@@ -269,6 +277,10 @@ header{
     }
     .d-block-about{
         margin-left: 45%;
+    }
+    .more-p{
+        font-size:50px;
+
     }
     
 }
